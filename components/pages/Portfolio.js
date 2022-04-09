@@ -1,12 +1,9 @@
 import React, { useRef } from "react";
-import {
-  LocomotiveScrollProvider,
-  useLocomotiveScroll,
-} from "react-locomotive-scroll";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
-const Portfolio = () => {
+const Portfolio = (props) => {
+  const { styles } = props;
   const containerRef = useRef(null);
-  const { scroll } = useLocomotiveScroll();
   return (
     <LocomotiveScrollProvider
       options={{
@@ -26,7 +23,7 @@ const Portfolio = () => {
                 data-scroll-position="top"
                 data-scroll-delay="0.05"
               >
-                Rami Khoualdi
+                Ramy Khoualdi
               </span>
             </p>
           </div>
@@ -44,27 +41,6 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        {/* Section 2 */}
-        {/* <div className={styles.description} id="header" data-scroll-section>
-          <p
-            className={styles.section2}
-            data-scroll-speed="-8"
-            data-scroll-position="top"
-            data-scroll-target="#section2"
-            data-scroll-repeat="true"
-          >
-            <span
-              className={styles.title3}
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-speed="-2"
-              data-scroll-position="top"
-              data-scroll-target="#section2"
-            >
-              About me
-            </span>
-          </p>
-        </div> */}
       </main>
     </LocomotiveScrollProvider>
   );
