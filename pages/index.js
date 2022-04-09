@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Home from '../components/pages/Home'
+import Portfolio from '../components/pages/Portfolio'
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
           <meta name="description" content="Rami Khoualdi" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Home />
+        <Portfolio />
         
       </div>
   );

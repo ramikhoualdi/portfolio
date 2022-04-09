@@ -4,7 +4,7 @@ import {
   useLocomotiveScroll,
 } from "react-locomotive-scroll";
 
-function Home() {
+const Portfolio = () => {
   const containerRef = useRef(null);
   const { scroll } = useLocomotiveScroll();
   return (
@@ -44,8 +44,8 @@ function Home() {
             </p>
           </div>
         </div>
-        {/* Section 1 */}
-        <div className={styles.description} id="header" data-scroll-section>
+        {/* Section 2 */}
+        {/* <div className={styles.description} id="header" data-scroll-section>
           <p
             className={styles.section2}
             data-scroll-speed="-8"
@@ -64,10 +64,10 @@ function Home() {
               About me
             </span>
           </p>
-        </div>
+        </div> */}
       </main>
     </LocomotiveScrollProvider>
   );
-}
+};
 
-export default Home;
+export default Portfolio;
