@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Ramy Khoualdi" />
+        <title>ramykhoualdi.com</title>
+        <meta name="description" content="Ramy Khoualdi Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Portfolio styles={styles} />
