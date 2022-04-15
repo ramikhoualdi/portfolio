@@ -33,16 +33,14 @@
 .title2 {
   font-family: AvenirRoman;
   color: black;
-  padding:0 50px;
+  /* padding:0 50px; */
   font-size: 4rem;
-  color: black;
 }
 .title3 {
   font-family: AvenirHeavy;
   color: black;
   padding:0 50px;
   font-size: 8rem;
-  color: black;
   text-transform: uppercase;
 }
 .subheading {
@@ -94,3 +92,95 @@
 .description{
   min-height: 20vh;
 }
+/* window Extra small */
+@media screen and (max-width: 576px) {
+  .title1 {
+    padding:0 50px;
+    font-size: 3.5rem;
+  }
+  .title2 {
+    padding:0 50px;
+    font-size: 1.2rem;
+  }
+  .title3 {
+    padding:0 50px;
+    font-size: 3.5rem;
+  }
+}
+/* window Small */
+@media screen and (min-width: 576px) {
+  .title1 {
+    padding:0 50px;
+    font-size: 4rem;
+  }
+  .title2 {
+    padding:0 50px;
+    font-size: 2rem;
+  }
+  .title3 {
+    padding:0 50px;
+    font-size: 4rem;
+  }
+}
+/* window Medium */
+@media screen and (min-width: 768px) {
+  .title1 {
+    padding:0 50px;
+    font-size: 5rem;
+  }
+  .title2 {
+    padding:0 50px;
+    font-size: 2rem;
+  }
+  .title3 {
+    padding:0 50px;
+    font-size: 5rem;
+  }
+}
+/* window Large */
+@media screen and (min-width: 992px) {
+  .title1 {
+    padding:0 50px;
+    font-size: 6rem;
+  }
+  .title2 {
+    padding:0 50px;
+    font-size: 3rem;
+  }
+  .title3 {
+    padding:0 50px;
+    font-size: 6rem;
+  }
+}
+/* window Extra large */
+@media screen and (min-width: 1200px) {
+  .title1 {
+    padding:0 50px;
+    font-size: 6rem;
+  }
+  .title2 {
+    padding:0 50px;
+    font-size: 3rem;
+  }
+  .title3 {
+    padding:0 50px;
+    font-size: 6rem;
+  }
+}
+/* window Extra extra large */
+@media screen and (min-width: 1400px) {
+  .title1 {
+    padding:0 50px;
+    font-size: 8rem;
+  }
+  .title2 {
+    padding:0 50px;
+    font-size: 4rem;
+  }
+  .title3 {
+    padding:0 50px;
+    font-size: 8rem;
+  }
+}
+
+
