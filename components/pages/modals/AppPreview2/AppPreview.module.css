@@ -1,0 +1,143 @@
+/* App1 */
+.app1Contaniner{
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    width: 100%;
+  }
+  .sectionLeft{
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    height: 100vh;
+    width: 50%;
+    margin-right: 50%;
+    /* position: fixed;
+    top: 1375px;
+    left: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    width: 50%;
+    flex: 1; */
+  }
+  .sectionRight {
+    position: absolute;
+    top: 0;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 50%;
+    width: 50%;
+    height: auto;
+  }
+  .app1Section1{
+    text-transform: uppercase;
+    /* position: absolute;
+    top: 0%;
+    left: 0%; */
+    padding: 5%;
+    font-size: 30px;
+    font-family: AvenirHeavy;
+  }
+  .app1Section2{
+    /* position: absolute; */
+    display: flex;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 5%;
+    height: 100%;
+  }
+  .app2SectionSub{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 5% 5% 5% 10%;
+  }
+  .app1name{
+    text-transform: capitalize;
+    font-size: 80px;
+    font-family: AvenirHeavy;
+    margin-bottom: 50px;
+  }
+  .app1position{
+    font-size: 30px;
+    font-family: AvenirLight;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .app1position2{
+    font-size: 20px;
+    font-family: AvenirLight;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .app1Description{
+    font-size: 30px;
+    font-family: AvenirLight;
+  }
+  .app1Section3{
+    text-transform: uppercase;
+    /* position: absolute;
+    bottom: 0%;
+    left: 0%; */
+    padding: 5%;
+    font-size: 30px;
+    font-family: AvenirHeavy;
+  }
+  
+  .imageContainer{
+    margin-top: 100vh;
+    height: 120vh;
+    position: relative;
+  }
+  .imageContainer2{
+    margin-top: 180vh;
+    height: 220vh;
+    position: relative;
+  }
+  /* project 2 */
+.img2Style1{
+    bottom: -570vh;
+    right: 5vw;
+    position: absolute;
+    height: 80vh;
+    /* filter: blur(1.2px); */
+    transform: scale(0.6) !important;
+  }
+  .img2Style2{
+    bottom: -525vh;
+    left: 2vw;
+    position: absolute;
+    height: 80vh;
+    /* filter: blur(0.8px); */
+    z-index: 2;
+  }
+  .img2Style3{
+    position: absolute;
+    bottom: -515vh;
+    right: 2vw;
+    height: 80vh;
+    /* filter: blur(0.6px); */
+    transform: scale(0.9) !important;
+  }
+  .img2Style4{
+    position: absolute;
+    bottom: -600vh;
+    left: 2vw;
+    height: 80vh;
+    transform: scale(0.7) !important;
+  }
+  .img2Style5{
+    position: absolute;
+    bottom: -570vh;
+    left: 11vw;
+    height: 80vh;
+    transform: scale(0.55) !important;
+    z-index: -1;
+  }

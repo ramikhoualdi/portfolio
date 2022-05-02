@@ -1,0 +1,453 @@
+.app1Contaniner{
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    width: 100%;
+  }
+  .sectionLeft{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    height: 100vh;
+    width: 50%;
+    margin-right: 50%;
+  }
+  .sectionRight {
+    position: absolute;
+    top: 0;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 50%;
+    width: 50%;
+    height: auto;
+  }
+  .app1Section1{
+    text-transform: uppercase;
+    padding: 5%;
+    font-size: 30px;
+    font-family: AvenirHeavy;
+  }
+  .app1Section2{
+    display: flex;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 5%;
+    height: 100%;
+  }
+  .app2SectionSub{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 5% 5% 5% 10%;
+  }
+  .app1name{
+    text-transform: capitalize;
+    font-size: 80px;
+    font-family: AvenirHeavy;
+    margin-bottom: 50px;
+  }
+  .app1position{
+    font-size: 30px;
+    font-family: AvenirLight;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .app1position2{
+    font-size: 20px;
+    font-family: AvenirLight;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .app1Description{
+    font-size: 30px;
+    font-family: AvenirLight;
+  }
+  .app1Section3{
+    text-transform: uppercase;
+    padding: 5%;
+    font-size: 30px;
+    font-family: AvenirHeavy;
+  }
+  
+  .imageContainer{
+    margin-top: 100vh;
+    height: 120vh;
+    position: relative;
+  }
+  .imageContainer2{
+    margin-top: 180vh;
+    height: 220vh;
+    position: relative;
+  }
+  .imgStyle1{
+    bottom: -430vh;
+    right: 5vw;
+    position: absolute;
+    height: 80vh;
+    /* filter: blur(1.2px); */
+    transform: scale(0.6) !important;
+  }
+  .imgStyle2{
+    bottom: -385vh;
+    left: 2vw;
+    position: absolute;
+    height: 80vh;
+    /* filter: blur(0.8px); */
+    z-index: 2;
+  }
+  .imgStyle3{
+    position: absolute;
+    bottom: -375vh;
+    right: 2vw;
+    height: 80vh;
+    /* filter: blur(0.6px); */
+    transform: scale(0.9) !important;
+  }
+  .imgStyle4{
+    position: absolute;
+    bottom: -460vh;
+    left: 2vw;
+    height: 80vh;
+    transform: scale(0.7) !important;
+  }
+  .imgStyle5{
+    position: absolute;
+    bottom: -430vh;
+    left: 11vw;
+    height: 80vh;
+    transform: scale(0.55) !important;
+    z-index: -1;
+  }
+/* window phone */
+@media screen and (max-width: 575px) {
+  .skillsContainerMain{
+      height: 50vh;
+      margin-bottom: 0vh;
+  }
+  .skillsText{
+      font-size:14px;
+  }
+  .aboutText3{
+      font-size: 80px;
+      top: 50%;
+      right: 0%;
+  }
+}
+/* window Small */
+@media screen and (min-width: 576px) {
+  .skillsContainerMain{
+      height: 50vh;
+      margin-bottom: 0vh;
+  }
+  .skillsText{
+      font-size:20px;
+  }
+  .aboutText3{
+      font-size: 100px;
+      top: 50%;
+      right: 0%;
+  }
+}
+/* window Medium */
+@media screen and (min-width: 768px) {
+  .skillsContainerMain{
+      height: 50vh;
+      margin-bottom: 5vh;
+  }
+  .skillsText{
+      font-size:24px;
+  }
+  .aboutText3{
+      font-size: 160px;
+      top: 60%;
+      right: 0%;
+  }
+}
+
+/* window Large */
+@media screen and (min-width: 992px) {
+  .skillsContainerMain{
+      height: 70vh;
+      margin-bottom: 20vh;
+  }
+  .skillsText{
+      font-size:28px;
+  }
+  .aboutText3{
+      font-size: 160px;
+      top: 60%;
+      right: 0%;
+  }
+}
+/* window Extra large */
+@media screen and (min-width: 1200px) {
+  .skillsText{
+      font-size:32px;
+  }
+  .aboutText3{
+      font-size: 160px;
+      top: 60%;
+      right: 0%;
+  }
+}
+/* window Extra extra large */
+@media screen and (min-width: 1400px) {
+  .app1Contaniner{
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    width: 100%;
+  }
+  .sectionLeft{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    height: 100vh;
+    width: 50%;
+    margin-right: 50%;
+  }
+  .sectionRight {
+    position: absolute;
+    top: 0;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 50%;
+    width: 50%;
+    height: auto;
+  }
+  .app1Section1{
+    text-transform: uppercase;
+    padding: 5%;
+    font-size: 30px;
+    font-family: AvenirHeavy;
+  }
+  .app1Section2{
+    display: flex;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 5%;
+    height: 100%;
+  }
+  .app2SectionSub{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 5% 5% 5% 10%;
+  }
+  .app1name{
+    text-transform: capitalize;
+    font-size: 80px;
+    font-family: AvenirHeavy;
+    margin-bottom: 50px;
+  }
+  .app1position{
+    font-size: 30px;
+    font-family: AvenirLight;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .app1position2{
+    font-size: 20px;
+    font-family: AvenirLight;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .app1Description{
+    font-size: 30px;
+    font-family: AvenirLight;
+  }
+  .app1Section3{
+    text-transform: uppercase;
+    padding: 5%;
+    font-size: 30px;
+    font-family: AvenirHeavy;
+  }
+  
+  .imageContainer{
+    margin-top: 100vh;
+    height: 120vh;
+    position: relative;
+  }
+  .imageContainer2{
+    margin-top: 180vh;
+    height: 220vh;
+    position: relative;
+  }
+  .imgStyle1{
+    bottom: -430vh;
+    right: 5vw;
+    position: absolute;
+    height: 80vh;
+    /* filter: blur(1.2px); */
+    transform: scale(0.6) !important;
+  }
+  .imgStyle2{
+    bottom: -385vh;
+    left: 2vw;
+    position: absolute;
+    height: 80vh;
+    /* filter: blur(0.8px); */
+    z-index: 2;
+  }
+  .imgStyle3{
+    position: absolute;
+    bottom: -375vh;
+    right: 2vw;
+    height: 80vh;
+    /* filter: blur(0.6px); */
+    transform: scale(0.9) !important;
+  }
+  .imgStyle4{
+    position: absolute;
+    bottom: -460vh;
+    left: 2vw;
+    height: 80vh;
+    transform: scale(0.7) !important;
+  }
+  .imgStyle5{
+    position: absolute;
+    bottom: -430vh;
+    left: 11vw;
+    height: 80vh;
+    transform: scale(0.55) !important;
+    z-index: -1;
+  }
+}
+/* window Extra extra extra large */
+@media screen and (min-width: 1600px) {
+  .app1Contaniner{
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    width: 100%;
+  }
+  .sectionLeft{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    height: 100vh;
+    width: 50%;
+    margin-right: 50%;
+  }
+  .sectionRight {
+    position: absolute;
+    top: 0;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 50%;
+    width: 50%;
+    height: auto;
+  }
+  .app1Section1{
+    text-transform: uppercase;
+    padding: 5%;
+    font-size: 30px;
+    font-family: AvenirHeavy;
+  }
+  .app1Section2{
+    display: flex;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 5%;
+    height: 100%;
+  }
+  .app2SectionSub{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 5% 5% 5% 10%;
+  }
+  .app1name{
+    text-transform: capitalize;
+    font-size: 80px;
+    font-family: AvenirHeavy;
+    margin-bottom: 50px;
+  }
+  .app1position{
+    font-size: 30px;
+    font-family: AvenirLight;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .app1position2{
+    font-size: 20px;
+    font-family: AvenirLight;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .app1Description{
+    font-size: 30px;
+    font-family: AvenirLight;
+  }
+  .app1Section3{
+    text-transform: uppercase;
+    padding: 5%;
+    font-size: 30px;
+    font-family: AvenirHeavy;
+  }
+  
+  .imageContainer{
+    margin-top: 100vh;
+    height: 120vh;
+    position: relative;
+  }
+  .imageContainer2{
+    margin-top: 180vh;
+    height: 220vh;
+    position: relative;
+  }
+  .imgStyle1{
+    bottom: -430vh;
+    right: 5vw;
+    position: absolute;
+    height: 80vh;
+    /* filter: blur(1.2px); */
+    transform: scale(0.6) !important;
+  }
+  .imgStyle2{
+    bottom: -385vh;
+    left: 2vw;
+    position: absolute;
+    height: 80vh;
+    /* filter: blur(0.8px); */
+    z-index: 2;
+  }
+  .imgStyle3{
+    position: absolute;
+    bottom: -375vh;
+    right: 2vw;
+    height: 80vh;
+    /* filter: blur(0.6px); */
+    transform: scale(0.9) !important;
+  }
+  .imgStyle4{
+    position: absolute;
+    bottom: -460vh;
+    left: 2vw;
+    height: 80vh;
+    transform: scale(0.7) !important;
+  }
+  .imgStyle5{
+    position: absolute;
+    bottom: -430vh;
+    left: 11vw;
+    height: 80vh;
+    transform: scale(0.55) !important;
+    z-index: -1;
+  }
+}

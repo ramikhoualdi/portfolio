@@ -17,6 +17,7 @@ export default function Home() {
       <Head>
         <title>ramykhoualdi.com</title>
         <meta name="description" content="Ramy Khoualdi Portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LocomotiveScrollProvider

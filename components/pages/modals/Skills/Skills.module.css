@@ -1,0 +1,136 @@
+.skillsContainerMain{
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20vh;
+}
+.skillsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10vw;
+}
+.skills{
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+.skillsText{
+    font-size:38px;
+    font-weight:600;
+    align-items: center;
+    font-family: AvenirLight;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+}
+.skillsspace{
+    height:5vh;
+}
+.aboutText3{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 200px;
+    font-family: AvenirHeavy;
+    color: rgb(223, 220, 220);
+    top: 60%;
+    right: 0%;
+    z-index: 1;
+  }
+/* window phone */
+@media screen and (max-width: 575px) {
+    .skillsContainerMain{
+        height: 50vh;
+        margin-bottom: 0vh;
+    }
+    .skillsText{
+        font-size:14px;
+    }
+    .aboutText3{
+        font-size: 80px;
+        top: 50%;
+        right: 0%;
+    }
+}
+/* window Small */
+@media screen and (min-width: 576px) {
+    .skillsContainerMain{
+        height: 50vh;
+        margin-bottom: 0vh;
+    }
+    .skillsText{
+        font-size:20px;
+    }
+    .aboutText3{
+        font-size: 100px;
+        top: 50%;
+        right: 0%;
+    }
+}
+/* window Medium */
+@media screen and (min-width: 768px) {
+    .skillsContainerMain{
+        height: 50vh;
+        margin-bottom: 5vh;
+    }
+    .skillsText{
+        font-size:24px;
+    }
+    .aboutText3{
+        font-size: 160px;
+        top: 60%;
+        right: 0%;
+    }
+}
+
+/* window Large */
+@media screen and (min-width: 992px) {
+    .skillsContainerMain{
+        height: 70vh;
+        margin-bottom: 20vh;
+    }
+    .skillsText{
+        font-size:28px;
+    }
+    .aboutText3{
+        font-size: 160px;
+        top: 60%;
+        right: 0%;
+    }
+}
+/* window Extra large */
+@media screen and (min-width: 1200px) {
+    .skillsText{
+        font-size:32px;
+    }
+    .aboutText3{
+        font-size: 160px;
+        top: 60%;
+        right: 0%;
+    }
+}
+/* window Extra extra large */
+@media screen and (min-width: 1400px) {
+    .skillsText{
+        font-size:32px;
+    }
+    .aboutText3{
+        font-size: 160px;
+        top: 60%;
+        right: 0%;
+    }
+}
+/* window Extra extra extra large */
+@media screen and (min-width: 1600px) {
+    .skillsText{
+        font-size:38px;
+    }
+    .aboutText3{
+        font-size: 200px;
+        top: 60%;
+        right: 0%;
+    }
+}

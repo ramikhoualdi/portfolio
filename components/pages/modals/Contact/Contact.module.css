@@ -1,0 +1,164 @@
+.aboutContainer{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20vh;
+  }
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20%;
+  }
+  .contactIcon{
+    width: 80px !important;
+    height: 80px !important;
+    cursor: pointer;
+    color: #fff !important;
+  }
+  .contactContact{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 200px;
+    font-family: AvenirHeavy;
+    color: rgb(223, 220, 220);
+    top: 30%;
+    left: 10%;
+    z-index: 1;
+  }
+  /* window phone */
+@media screen and (max-width: 575px) {
+  .aboutContainer{
+    height: 40vh;
+    margin-bottom: 5vh;
+  }
+  .contacts{
+    padding: 0 5%;
+  }
+  .contactIcon{
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .contactContact{
+    font-size: 80px;
+    top: 30%;
+    left: 30%;
+  }
+}
+/* window Small */
+@media screen and (min-width: 576px) {  
+  .aboutContainer{
+    height: 20vh;
+    margin-bottom: 20vh;
+  }
+  .contacts{
+    padding: 0 5%;
+  }
+  .contactIcon{
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .contactContact{
+    font-size: 100px;
+    top: 30%;
+    left: 30%;
+  }
+}
+/* window Medium */
+@media screen and (min-width: 768px) {
+  .aboutContainer{
+    height: 40vh;
+    margin-bottom: 10vh;
+  }
+  .contacts{
+    padding: 0 10%;
+  }
+  .contactIcon{
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .contactContact{
+    font-size: 160px;
+    top: 30%;
+    left: 10%;
+  }
+}
+
+/* window Large */
+@media screen and (min-width: 992px) {
+  .aboutContainer{
+    height: 40vh;
+    margin-bottom: 20vh;
+  }
+  .contacts{
+    padding: 0 20%;
+  }
+  .contactIcon{
+    width: 65px !important;
+    height: 65px !important;
+  }
+  .contactContact{
+    font-size: 160px;
+    top: 30%;
+    left: 10%;
+  }
+}
+/* window Extra large */
+@media screen and (min-width: 1200px) {
+  .aboutContainer{
+    height: 40vh;
+    margin-bottom: 20vh;
+  }
+  .contacts{
+    padding: 0 20%;
+  }
+  .contactIcon{
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .contactContact{
+    font-size: 160px;
+    top: 30%;
+    left: 10%;
+  }
+}
+/* window Extra extra large */
+@media screen and (min-width: 1400px) {
+  .aboutContainer{
+    height: 40vh;
+    margin-bottom: 10vh;
+  }
+  .contacts{
+    padding: 0 20%;
+  }
+  .contactIcon{
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .contactContact{
+    font-size: 160px;
+    top: 30%;
+    left: 10%;
+  }
+}
+/* window Extra extra extra large */
+@media screen and (min-width: 1600px) {
+  .aboutContainer{
+    height: 40vh;
+    margin-bottom: 20vh;
+  }
+  .contacts{
+    padding: 0 20%;
+  }
+  .contactIcon{
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .contactContact{
+    font-size: 200px;
+    top: 30%;
+    left: 10%;
+  }
+}

@@ -1,0 +1,63 @@
+.cube{
+    background-color: #222;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20vh;
+}
+/* window phone */
+@media screen and (max-width: 575px) {
+.cube{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10vh;
+}
+}
+/* window Small */
+@media screen and (min-width: 576px) {  
+.cube{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10vh;
+}
+}
+/* window Medium */
+@media screen and (min-width: 768px) {
+.cube{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10vh;
+}
+}
+
+/* window Large */
+@media screen and (min-width: 992px) {
+.cube{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15vh;
+}
+}
+/* window Extra large */
+@media screen and (min-width: 1200px) {
+.cube{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20vh;
+}
+}
+/* window Extra extra large */
+@media screen and (min-width: 1400px) {
+.cube{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20vh;
+}
+}
+/* window Extra extra extra large */
+@media screen and (min-width: 1600px) {
+.cube{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20vh;
+}
+}

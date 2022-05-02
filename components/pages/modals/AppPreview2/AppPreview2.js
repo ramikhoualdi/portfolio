@@ -1,8 +1,8 @@
 import React from "react";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
+import styles from './AppPreview.module.css'
 
-const AppPreview2 = (props) => {
-  const { styles } = props;
+const AppPreview2 = () => {
   const { scroll } = useLocomotiveScroll();
   return (
     <div className={styles.app1Contaniner} data-scroll-container>
