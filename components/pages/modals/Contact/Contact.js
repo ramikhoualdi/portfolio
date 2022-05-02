@@ -14,7 +14,7 @@ const Contact = () => {
         Contact
       </text>
       <div className={styles.contacts}>
-        <Link href="https://twitter.com/Rami86001660">
+        {/* <Link href="https://twitter.com/Rami86001660"> */}
           <a target="_blank">
             <img
               src="/icons/twitter.png"
@@ -22,7 +22,7 @@ const Contact = () => {
               className={styles.contactIcon}
             />
           </a>
-        </Link>
+        {/* </Link> */}
         <Link href="https://github.com/ramikhoualdi">
           <a target="_blank">
             <img
@@ -41,7 +41,7 @@ const Contact = () => {
             />
           </a>
         </Link>
-        <Link href="https://www.instagram.com/ramy_khoualdi">
+        {/* <Link href="https://www.instagram.com/ramy_khoualdi"> */}
           <a target="_blank">
             <img
               src="/icons/instagram.png"
@@ -49,8 +49,8 @@ const Contact = () => {
               className={styles.contactIcon}
             />
           </a>
-        </Link>
-        <Link href="https://www.linkedin.com/in/rami-khoualdi-70ba04157">
+        {/* </Link> */}
+        {/* <Link href="https://www.linkedin.com/in/rami-khoualdi-70ba04157"> */}
           <a target="_blank">
             <img
               src="/icons/linkedin.png"
@@ -58,7 +58,7 @@ const Contact = () => {
               className={styles.contactIcon}
             />
           </a>
-        </Link>
+        {/* </Link> */}
       </div>
     </div>
   );
