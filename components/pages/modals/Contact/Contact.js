@@ -15,13 +15,13 @@ const Contact = () => {
       </text>
       <div className={styles.contacts}>
         {/* <Link href="https://twitter.com/Rami86001660"> */}
-          <a target="_blank">
-            <img
-              src="/icons/twitter.png"
-              alt="twitter"
-              className={styles.contactIcon}
-            />
-          </a>
+        <a target="_blank">
+          <img
+            src="/icons/twitter.png"
+            alt="twitter"
+            className={styles.contactIcon}
+          />
+        </a>
         {/* </Link> */}
         <Link href="https://github.com/ramikhoualdi">
           <a target="_blank">
@@ -42,15 +42,15 @@ const Contact = () => {
           </a>
         </Link>
         {/* <Link href="https://www.instagram.com/ramy_khoualdi"> */}
-          <a target="_blank">
-            <img
-              src="/icons/instagram.png"
-              alt="github"
-              className={styles.contactIcon}
-            />
-          </a>
+        <a target="_blank">
+          <img
+            src="/icons/instagram.png"
+            alt="github"
+            className={styles.contactIcon}
+          />
+        </a>
         {/* </Link> */}
-        {/* <Link href="https://www.linkedin.com/in/rami-khoualdi-70ba04157"> */}
+        <Link href="https://www.linkedin.com/in/ramikhoualdi/">
           <a target="_blank">
             <img
               src="/icons/linkedin.png"
@@ -58,7 +58,7 @@ const Contact = () => {
               className={styles.contactIcon}
             />
           </a>
-        {/* </Link> */}
+        </Link>
       </div>
     </div>
   );

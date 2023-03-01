@@ -13,8 +13,9 @@ const About = () => {
         About me
       </text>
       <text className={styles.aboutText2} data-scroll>
-        Front-end developer who cares deeply about user experience. Serious
-        passion for UI design and new technologies.
+        Full-Stack React/React Native Developer, I have a proven track record of
+        delivering user-friendly UI/UX and enhancing user engagement,
+        monetization, and app popularity.
       </text>
     </div>
   );

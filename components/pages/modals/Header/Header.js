@@ -26,7 +26,7 @@ const Header = () => {
             data-scroll-position="top"
             data-scroll-delay="0.05"
           >
-            Front-end Developer & UI/UX Designer
+            Full Stack React/React Native Developer
           </span>
         </p>
       </div>
