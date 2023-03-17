@@ -4,22 +4,23 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-display: swap;
 }
 @font-face {
-  font-family: 'Valencia';
-  src: url(/fonts/Valencia.ttf) format('truetype');
+  font-family: "Valencia";
+  src: url(/fonts/Valencia.ttf) format("truetype");
 }
 @font-face {
-  font-family: 'AvenirRoman';
-  src: url(/fonts/AvenirRoman.ttf) format('truetype');
+  font-family: "AvenirRoman";
+  src: url(/fonts/AvenirRoman.ttf) format("truetype");
 }
 @font-face {
-  font-family: 'AvenirHeavy';
-  src: url(/fonts/AvenirHeavy.ttf) format('truetype');
+  font-family: "AvenirHeavy";
+  src: url(/fonts/AvenirHeavy.ttf) format("truetype");
 }
 @font-face {
-  font-family: 'AvenirLight';
-  src: url(/fonts/AvenirLight.ttf) format('truetype');
+  font-family: "AvenirLight";
+  src: url(/fonts/AvenirLight.ttf) format("truetype");
 }
 
 a {
@@ -28,16 +29,16 @@ a {
 }
 span::selection,
 div::selection,
-text::selection{
-  background-color:#222 ;
+text::selection {
+  background-color: #222;
   color: #fff;
 }
 
 * {
   box-sizing: border-box;
 }
-img{
-  width: 388px ;
-  height: 781px ;
+img {
+  width: 388px;
+  height: 781px;
   object-fit: contain !important;
 }
