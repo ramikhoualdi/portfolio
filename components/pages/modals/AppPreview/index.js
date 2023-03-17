@@ -37,74 +37,39 @@ const AppPreview = (props) => {
           data-scroll-speed="2"
           data-scroll-offset="40%"
         >
-          <div
-            className={`${styles.imgStyleContainer} ${styles.imgStyleContainer1}`}
-            data-scroll
-            data-scroll-speed="1"
-            data-scroll-repeat
-          >
-            <Image
-              src={item.img1.src}
+          <div data-scroll data-scroll-speed="1" data-scroll-repeat>
+            <img
+              src={`/images/${item.imagesFolder}/s1.png`}
               alt={`${item.imagesFolder}1`}
-              layout="fill"
               className={styles.imgStyle1}
-              priority
             />
           </div>
-          <div
-            className={`${styles.imgStyleContainer} ${styles.imgStyleContainer2}`}
-            data-scroll
-            data-scroll-speed="2"
-            data-scroll-repeat
-          >
-            <Image
-              src={item.img2.src}
+          <div data-scroll data-scroll-speed="2" data-scroll-repeat>
+            <img
+              src={`/images/${item.imagesFolder}/s2.png`}
               alt={`${item.imagesFolder}2`}
-              layout="fill"
               className={styles.imgStyle2}
-              priority
             />
           </div>
-          <div
-            className={`${styles.imgStyleContainer} ${styles.imgStyleContainer3}`}
-            data-scroll
-            data-scroll-speed="4"
-            data-scroll-repeat
-          >
-            <Image
-              src={item.img3.src}
+          <div data-scroll data-scroll-speed="4" data-scroll-repeat>
+            <img
+              src={`/images/${item.imagesFolder}/s3.png`}
               alt={`${item.imagesFolder}3`}
-              layout="fill"
               className={styles.imgStyle3}
-              priority
             />
           </div>
-          <div
-            className={`${styles.imgStyleContainer} ${styles.imgStyleContainer4}`}
-            data-scroll
-            data-scroll-speed="1"
-            data-scroll-repeat
-          >
-            <Image
-              src={item.img4.src}
+          <div data-scroll data-scroll-speed="1" data-scroll-repeat>
+            <img
+              src={`/images/${item.imagesFolder}/s4.png`}
               alt={`${item.imagesFolder}4`}
-              layout="fill"
               className={styles.imgStyle4}
-              priority
             />
           </div>
-          <div
-            className={`${styles.imgStyleContainer} ${styles.imgStyleContainer5}`}
-            data-scroll
-            data-scroll-speed="2"
-            data-scroll-repeat
-          >
-            <Image
-              src={item.img5.src}
+          <div data-scroll data-scroll-speed="2" data-scroll-repeat>
+            <img
+              src={`/images/${item.imagesFolder}/s5.png`}
               alt={`${item.imagesFolder}5`}
-              layout="fill"
               className={styles.imgStyle5}
-              priority
             />
           </div>
         </div>

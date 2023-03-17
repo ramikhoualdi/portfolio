@@ -16,7 +16,7 @@ const Contact = () => {
       </text>
       <div className={styles.contacts}>
         {/* <Link href="https://twitter.com/Rami86001660"> */}
-        <a target="_blank" href="#twitter">
+        <a target="_blank" rel="noopener noreferrer">
           <Image
             src="/icons/twitter.png"
             alt="twitter"
@@ -27,7 +27,7 @@ const Contact = () => {
         </a>
         {/* </Link> */}
         <Link href="https://github.com/ramikhoualdi">
-          <a target="_blank" href="#github">
+          <a target="_blank" rel="noopener noreferrer">
             <Image
               src="/icons/github.png"
               alt="github"
@@ -38,7 +38,7 @@ const Contact = () => {
           </a>
         </Link>
         <Link href="mailto:ramykhweldi@gmail.com">
-          <a target="_blank" href="#email">
+          <a target="_blank" rel="noopener noreferrer">
             <Image
               src="/icons/email.png"
               alt="email"
@@ -48,8 +48,7 @@ const Contact = () => {
             />
           </a>
         </Link>
-        {/* <Link href="https://www.instagram.com/ramy_khoualdi"> */}
-        <a target="_blank" href="#instagram">
+        <a target="_blank" rel="noopener noreferrer">
           <Image
             src="/icons/instagram.png"
             alt="github"
@@ -58,9 +57,8 @@ const Contact = () => {
             height={80}
           />
         </a>
-        {/* </Link> */}
         <Link href="https://www.linkedin.com/in/ramikhoualdi/">
-          <a target="_blank" href="#linkedin">
+          <a target="_blank" rel="noopener noreferrer">
             <Image
               src="/icons/linkedin.png"
               alt="github"

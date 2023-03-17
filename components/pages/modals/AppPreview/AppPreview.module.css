@@ -72,43 +72,38 @@
   height: 200vh;
   position: relative;
 }
-.imgStyleContainer {
+.imgStyle1 {
   position: absolute;
-  width: 20vw;
-  height: 80vh;
-}
-.imgStyleContainer1 {
   top: 20vh;
   left: 2vw;
-}
-.imgStyleContainer2 {
-  top: 10vh;
-  right: 3vw;
-}
-.imgStyleContainer3 {
-  top: 50vh;
-  left: 12vw;
-}
-.imgStyleContainer4 {
-  top: 100vh;
-  left: 0vw;
-}
-.imgStyleContainer5 {
-  top: 80vh;
-  right: 5vw;
-}
-.imgStyle1 {
+  height: 80vh;
   transform: scale(1) !important;
 }
 .imgStyle2 {
+  position: absolute;
+  top: 10vh;
+  right: 3vw;
+  height: 80vh;
   transform: scale(1) !important;
 }
 .imgStyle3 {
+  position: absolute;
+  top: 80vh;
+  left: 12vw;
+  height: 80vh;
   transform: scale(0.9) !important;
 }
 .imgStyle4 {
+  position: absolute;
+  top: 120vh;
+  left: 0vw;
+  height: 80vh;
   transform: scale(1) !important;
 }
 .imgStyle5 {
+  position: absolute;
+  top: 100vh;
+  right: 5vw;
+  height: 80vh;
   transform: scale(0.9) !important;
 }
