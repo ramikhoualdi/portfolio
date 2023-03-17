@@ -69,7 +69,7 @@ const Portfolio = (props) => {
       <Header />
       <About />
       {data.map((item, index) => (
-        <AppPreview index={index} item={item} />
+        <AppPreview key={index} item={item} />
       ))}
       <Others />
       <Skills />
