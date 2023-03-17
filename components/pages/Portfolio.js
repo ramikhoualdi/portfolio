@@ -63,6 +63,9 @@ const data = [
   },
 ];
 
+// add this ASAP
+// https://codesandbox.io/s/07-final-torus-knot-r3bo1?file=/src/Gl.js
+
 const Portfolio = (props) => {
   const { styles } = props;
   return (
