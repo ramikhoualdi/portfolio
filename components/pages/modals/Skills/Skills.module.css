@@ -1,9 +1,9 @@
 .skillsContainerMain {
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   position: relative;
   overflow: hidden;
-  margin-bottom: 20vh;
+  padding-bottom: 20vh;
 }
 .skillsContainer {
   width: 100%;
@@ -36,101 +36,7 @@
   font-size: 200px;
   font-family: AvenirHeavy;
   color: rgb(223, 220, 220);
-  top: 100%;
-  right: 0%;
+  top: 65%;
+  right: 20%;
   z-index: 1;
-}
-/* window phone */
-@media screen and (max-width: 575px) {
-  .skillsContainerMain {
-    height: 50vh;
-    margin-bottom: 0vh;
-  }
-  .skillsText {
-    font-size: 14px;
-  }
-  .aboutText3 {
-    font-size: 80px;
-    top: 50%;
-    right: 0%;
-  }
-}
-/* window Small */
-@media screen and (min-width: 576px) {
-  .skillsContainerMain {
-    height: 50vh;
-    margin-bottom: 0vh;
-  }
-  .skillsText {
-    font-size: 20px;
-  }
-  .aboutText3 {
-    font-size: 100px;
-    top: 50%;
-    right: 0%;
-  }
-}
-/* window Medium */
-@media screen and (min-width: 768px) {
-  .skillsContainerMain {
-    height: 50vh;
-    margin-bottom: 5vh;
-  }
-  .skillsText {
-    font-size: 24px;
-  }
-  .aboutText3 {
-    font-size: 120px;
-    top: 70%;
-    right: 0%;
-  }
-}
-
-/* window Large */
-@media screen and (min-width: 992px) {
-  .skillsContainerMain {
-    height: 80vh;
-    margin-bottom: 20vh;
-  }
-  .skillsText {
-    font-size: 28px;
-  }
-  .aboutText3 {
-    font-size: 160px;
-    top: 70%;
-    right: 0%;
-  }
-}
-/* window Extra large */
-@media screen and (min-width: 1200px) {
-  .skillsText {
-    font-size: 32px;
-  }
-  .aboutText3 {
-    font-size: 160px;
-    top: 60%;
-    right: 0%;
-  }
-}
-/* window Extra extra large */
-@media screen and (min-width: 1400px) {
-  .skillsText {
-    font-size: 32px;
-  }
-  .aboutText3 {
-    font-size: 160px;
-    top: 60%;
-    right: 0%;
-  }
-}
-/* window Extra extra extra large */
-@media screen and (min-width: 1600px) {
-  .skillsText {
-    font-size: 38px;
-  }
-  .aboutText3 {
-    font-size: 200px;
-    top: 70%;
-    right: 0%;
-  }
 }
