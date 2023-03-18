@@ -23,7 +23,7 @@ const Header = () => {
           <span
             className={styles.title1}
             data-scroll
-            data-scroll-speed="3"
+            data-scroll-speed="6"
             data-scroll-position="top"
             data-scroll-delay="0.05"
           >
@@ -46,7 +46,7 @@ const Header = () => {
             data-scroll-position="top"
             data-scroll-delay="0.05"
           >
-            Full Stack React/React Native Developer
+            Full Stack Reactjs and React Native Developer
           </span>
         </p>
       </div>

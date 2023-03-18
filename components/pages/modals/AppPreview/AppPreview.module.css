@@ -67,6 +67,12 @@
   padding: 5%;
   font-size: 30px;
   font-family: AvenirHeavy;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.linkUnderline {
+  text-decoration: underline !important;
 }
 .imageContainer {
   height: 200vh;

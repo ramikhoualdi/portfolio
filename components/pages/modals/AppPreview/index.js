@@ -2,6 +2,7 @@ import React from "react";
 import Cube from "../Cube";
 import styles from "./AppPreview.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const AppPreview = (props) => {
   const { item } = props;
@@ -28,7 +29,59 @@ const AppPreview = (props) => {
             <div className={styles.app1Description}>{item.desc}</div>
           </div>
         </div>
-        <div className={styles.app1Section3}>{item.platform}</div>
+        <div className={styles.app1Section3}>
+          {item.ios.isShown ? (
+            item.ios.link ? (
+              <Link href={item.ios.link}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.linkUnderline}
+                >
+                  {item.ios.text}
+                </a>
+              </Link>
+            ) : (
+              <p>{item.ios.text}</p>
+            )
+          ) : null}
+          {item.android.isShown ? (
+            item.android.link ? (
+              <>
+                <p>&nbsp;•&nbsp;</p>
+                <Link href={item.android.link}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.linkUnderline}
+                  >
+                    {item.android.text}
+                  </a>
+                </Link>
+              </>
+            ) : (
+              <p>&nbsp;•&nbsp;{item.android.text}</p>
+            )
+          ) : null}
+          {item.web.isShown ? (
+            item.web.link ? (
+              <>
+                <p>&nbsp;•&nbsp;</p>
+                <Link href={item.web.link}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.linkUnderline}
+                  >
+                    {item.web.text}
+                  </a>
+                </Link>
+              </>
+            ) : (
+              <p>&nbsp;•&nbsp;{item.web.text}</p>
+            )
+          ) : null}
+        </div>
       </div>
       <div className={styles.sectionRight}>
         <div

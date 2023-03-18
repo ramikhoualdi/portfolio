@@ -13,9 +13,9 @@ const About = () => {
         About me
       </text>
       <text className={styles.aboutText2}>
-        Full-Stack React/React Native Developer, I have a proven track record of
-        delivering user-friendly UI/UX and enhancing user engagement,
-        monetization, and app popularity.
+        As a skilled Full-Stack Developer specializing in Reactjs and React
+        Native, I have a proven track record of crafting exceptional web and
+        mobile apps with top-notch user experience and responsive design.
       </text>
     </div>
   );
