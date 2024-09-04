@@ -19,6 +19,11 @@ export default function Me() {
         }}
         text="Frontend Engineer"
       />
+      <p>
+        As a skilled Full-Stack Developer specializing in Reactjs and React
+        Native, I have a proven track record of crafting exceptional web and
+        mobile apps with top-notch user experience and responsive design.
+      </p>
     </div>
   );
 }
