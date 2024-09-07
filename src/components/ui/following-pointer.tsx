@@ -1,6 +1,6 @@
 // Core component that receives mouse positions and renders pointer and content
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 import { motion, AnimatePresence, useMotionValue } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -69,15 +69,17 @@ export const FollowPointer = ({
   y: any;
   title?: string | React.ReactNode;
 }) => {
-  const colors = [
-    "sky-500",
-    "neutral-500",
-    "teal-500",
-    "green-500",
-    "blue-500",
-    "red-500",
-    "yellow-500",
-  ];
+  const colors = useMemo(() => {
+    return [
+      "sky-500",
+      "neutral-500",
+      "teal-500",
+      "green-500",
+      "blue-500",
+      "red-500",
+      "yellow-500",
+    ];
+  }, []);
   const [cursorColor, setCursorColor] = useState(colors[0]);
 
   useEffect(() => {

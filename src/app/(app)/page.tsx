@@ -18,7 +18,7 @@ type LocationInfo = {
   longitude?: string;
 } | null;
 
-export default async function IndexPage() {
+export default function IndexPage() {
   const [currentUseLocation, setCurrentUserLocation] =
     useState<LocationInfo>(null);
 
