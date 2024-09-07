@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
+import { useWindowSize } from "@/hooks/use-window-size";
 
 interface IPlatform {
   isShown: boolean;
@@ -14,11 +15,16 @@ interface IPlatform {
   link: string | null;
 }
 
+interface ITech {
+  name: string;
+  url: string;
+}
+
 interface IMobile {
   nb: string;
   name: string;
   position: string;
-  tech: string[];
+  tech: ITech[];
   desc: string;
   platform: string;
   imagesFolder: string;
@@ -35,19 +41,23 @@ export const MobileAppDetails: React.FC<MobileAppDetailsProps> = ({ app }) => {
   if (!app) return null;
   const { position, desc, platform } = app;
   return (
-    <div className="relative flex h-full flex-col items-start justify-between pb-20 pr-6 pt-10">
-      <p className="text-body-medium-bold text-2xl font-medium">{position}</p>
-      <p className="text-body-medium-bold text-5xl font-extralight">{desc}</p>
-      <p className="text-heading-medium text-2xl">{platform}</p>
+    <div className="relative flex h-full flex-col items-start justify-between pb-8 pl-4 pr-12 pt-10 md:pb-20">
+      <p className="text-xl font-semibold md:text-2xl">{position}</p>
+      <p className="my-10 text-xl font-extralight md:text-5xl">{desc}</p>
+      <p className="text-xl font-semibold md:text-2xl">{platform}</p>
     </div>
   );
 };
 
 export default function MobileApps() {
+  const size = useWindowSize();
+
+  const isDesktopWindow = size.width && size.width > 1280;
+
   const appNames = [
     "sidegame",
-    // "medipocket",
-    // "rideshare",
+    "medipocket",
+    "rideshare",
     // "hearppl",
     // "ertnashville",
     // "d2",
@@ -63,13 +73,7 @@ export default function MobileApps() {
 
   const createCards = (images: string[]): JSX.Element[] =>
     images.map((card, index) => (
-      <Card
-        key={index}
-        index={index}
-        cardImg={card}
-        layout={true}
-        isMobile={true}
-      />
+      <Card key={index} index={index} cardImg={card} isMobile={true} />
     ));
 
   const allCards = mobileAppsImages.map(createCards);
@@ -87,43 +91,49 @@ export default function MobileApps() {
   };
 
   return (
-    <div className="h-full w-full py-20 pl-14">
+    <div className="h-full w-full md:pl-14">
       {entries.map(([appName, cards]) => {
-        console.log("appName => ", appName);
         const appInfo = getAppDetails(appName.replace("Cards", ""));
         return (
           <Fragment key={appName}>
-            <div className="scrollbar-none relative -mx-12 -my-4 overflow-x-scroll px-12 py-4 md:mx-0 md:px-0">
-              <div className="flex gap-4">
-                <Image
-                  src={`/images/${appInfo?.imagesFolder}/logo.png`}
-                  width={50}
-                  height={50}
-                  alt={`${appInfo?.name}-logo`}
-                />
-                <h2 className="text-heading-large underline underline-offset-4">
-                  {appInfo?.name}
-                </h2>
-              </div>
+            <div className="flex items-center gap-4 pl-4">
+              <Image
+                className="object-contain"
+                src={`/images/${appInfo?.imagesFolder}/logo.png`}
+                width={50}
+                height={50}
+                alt={`${appInfo?.name}-logo`}
+              />
+              <h2 className="md:text-heading-large text-xl font-bold underline underline-offset-4">
+                {appInfo?.name}
+              </h2>
+            </div>
+            <div className="scrollbar-none relative z-20 -my-4 max-w-full overflow-x-scroll pl-4 md:mx-0 md:px-12">
               <div className="flex h-24 w-full items-center gap-x-1 pt-4">
-                <p className="text-heading-medium mr-2 min-w-28 text-xl">
+                <p className="mr-2 min-w-24 text-base font-semibold md:min-w-28 md:text-xl">
                   Tech Stack
                 </p>
                 <Separator orientation="vertical" className="mx-2 h-8" />
-                {appInfo?.tech.map((option) => (
-                  <LinkPreview key={option} url="https://nextjs.org">
-                    <Button className="text-body-medium-bold mr-2 rounded-full border bg-transparent hover:bg-black">
-                      {option}
+                {appInfo?.tech.map(({ name, url }) => (
+                  <LinkPreview key={name} url={url}>
+                    <Button className="md:text-body-medium-bold mr-2 rounded-full border bg-transparent text-sm text-[--forground] hover:bg-black">
+                      {name}
                     </Button>
                   </LinkPreview>
                 ))}
               </div>
             </div>
-            <div className="mb-1 flex">
-              <div className="z-0 h-[689px] w-full">
+            <div className="relatove mb-1 flex flex-col items-center xl:flex-row">
+              <div className="relative z-10 h-full w-full md:h-[689px]">
                 <MobileAppDetails app={appInfo} />
+                {isDesktopWindow ? (
+                  <div className="pointer-events-none absolute -right-8 bottom-0 top-0 w-[80px] bg-transparent">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-transparent opacity-100"></div>
+                    <div className="opacity-99 absolute inset-0 bg-gradient-to-r from-transparent to-transparent backdrop-blur-lg"></div>
+                  </div>
+                ) : null}
               </div>
-              <div className="z-10 w-full">
+              <div className="relative z-0 w-full">
                 <Carousel key={appName} items={cards} />
               </div>
             </div>
