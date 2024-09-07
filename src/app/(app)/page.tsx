@@ -18,16 +18,17 @@ type LocationInfo = {
   longitude?: string;
 } | null;
 
-export default async function IndexPage() {
+export default function IndexPage() {
   const [currentUseLocation, setCurrentUserLocation] =
     useState<LocationInfo>(null);
 
   useEffect(() => {
-    async () => {
+    const fetchGeoLocation = async () => {
       const userLocation = await getUserGeoLocation();
       setCurrentUserLocation(userLocation);
       console.log("userLocation => ", userLocation);
     };
+    fetchGeoLocation();
   }, []);
 
   return (
