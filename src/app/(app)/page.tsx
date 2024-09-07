@@ -23,11 +23,12 @@ export default function IndexPage() {
     useState<LocationInfo>(null);
 
   useEffect(() => {
-    async () => {
+    const fetchGeoLocation = async () => {
       const userLocation = await getUserGeoLocation();
       setCurrentUserLocation(userLocation);
       console.log("userLocation => ", userLocation);
     };
+    fetchGeoLocation();
   }, []);
 
   return (
