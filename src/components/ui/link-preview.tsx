@@ -62,7 +62,7 @@ export const LinkPreview = ({
     setIsMounted(true);
   }, []);
 
-  const springConfig = { stiffness: 100, damping: 15 };
+  const springConfig = { stiffness: 10, damping: 150 };
   const x = useMotionValue(0);
 
   const translateX = useSpring(x, springConfig);
@@ -70,7 +70,7 @@ export const LinkPreview = ({
   const handleMouseMove = (event: any) => {
     const targetRect = event.target.getBoundingClientRect();
     const eventOffsetX = event.clientX - targetRect.left;
-    const offsetFromCenter = (eventOffsetX - targetRect.width / 2) / 2; // Reduce the effect to make it subtle
+    const offsetFromCenter = (eventOffsetX - targetRect.width / 2) / 8; // Reduce the effect to make it subtle
     x.set(offsetFromCenter);
   };
 
@@ -83,7 +83,6 @@ export const LinkPreview = ({
             width={width}
             height={height}
             quality={quality}
-            layout={layout}
             priority={true}
             alt="hidden image"
           />
@@ -101,6 +100,8 @@ export const LinkPreview = ({
           onMouseMove={handleMouseMove}
           className={cn("text-black dark:text-white", className)}
           href={url}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {children}
         </HoverCardPrimitive.Trigger>
@@ -133,6 +134,8 @@ export const LinkPreview = ({
               >
                 <Link
                   href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block overflow-hidden rounded-[--border-radius] border bg-black p-3 shadow hover:border-neutral-200 dark:hover:border-neutral-800"
                   style={{ fontSize: 0 }}
                 >
@@ -141,7 +144,6 @@ export const LinkPreview = ({
                     width={width}
                     height={height}
                     quality={quality}
-                    layout={layout}
                     priority={true}
                     className="rounded-lg"
                     alt="preview image"

@@ -1,11 +1,11 @@
 export default function AboutMe() {
   return (
-    <div className="flex h-dvh w-full flex-col items-center justify-center p-8 pl-4 md:p-10">
+    <div className="flex w-full flex-col items-center justify-center p-4 pl-4 md:px-10 md:py-20 mb-20">
       <p className="text-[36px] font-thin leading-[44px] md:text-6xl md:font-extralight">
-        🔰Design and code are only tools of expression. What sets us and our
-        work apart is people. We’re a small group of creative thinkers who craft
-        bespoke digital-first brand identities and experiences, tailor-made for
-        you and your audience.🔛🔜
+        🔰The product always comes first. Design and code are the tools to
+        deliver solutions that meet real needs. My engineering process is driven
+        by understanding the user and creating digital experiences that
+        prioritize functionality and simplicity.🔛✌️
       </p>
     </div>
   );

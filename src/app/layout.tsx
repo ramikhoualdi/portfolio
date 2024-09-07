@@ -5,7 +5,7 @@ import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Toaster } from "@/components/ui/sonner";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/lib/fonts";
-import { cn } from "@/lib/utils";
+import { absoluteUrl, cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-  manifest: `${siteConfig.url}/site.webmanifest`,
+  manifest: absoluteUrl("/site.webmanifest"),
 };
 
 export const viewport: Viewport = {

@@ -6,14 +6,12 @@ import React, {
   createContext,
   useContext,
 } from "react";
-import {
-  IconArrowNarrowLeft,
-  IconArrowNarrowRight,
-} from "@tabler/icons-react";
+import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { useWindowSize } from "@/hooks/use-window-size";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -116,7 +114,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="rounded-3xl last:pr-[20px] md:last:pr-[40px]"
+                className="rounded-3xl last:pr-4 md:last:pr-[40px]"
               >
                 {item}
               </motion.div>
@@ -155,6 +153,10 @@ export const Card = ({
   layout?: boolean;
   isMobile?: boolean;
 }) => {
+  const size = useWindowSize();
+
+  const isDesktopWindow = size.width && size.width > 768;
+
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const { onCardClose, currentIndex } = useContext(CarouselContext);
@@ -192,7 +194,7 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${cardImg}` : undefined}
         onClick={handleOpen}
-        className={`relative z-10 flex ${isMobile ? "h-[584.8px] w-[270.5px]" : "h-[460.13px] w-[736.95px]"} cursor-default flex-col items-start justify-start overflow-hidden rounded-3xl border bg-gray-100 dark:bg-neutral-900`}
+        className={`relative z-10 flex ${isMobile ? (isDesktopWindow ? "h-[584.8px] w-[270.5px]" : "h-[409.36px] w-[189.35px]") : isDesktopWindow ? "h-[460.13px] w-[736.95px]" : "h-[230.065px] w-[368.475px]"} cursor-default flex-col items-start justify-start overflow-hidden rounded-3xl border bg-gray-100 dark:bg-neutral-900`}
       >
         <BlurImage
           src={cardImg}
