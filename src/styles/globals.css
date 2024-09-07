@@ -80,6 +80,28 @@
   }
 }
 
+@layer components {
+  .text-heading-large {
+    @apply text-[44px] font-semibold leading-[48px] tracking-[-0.024em];
+  }
+  .text-heading-medium {
+    @apply text-[36px] font-semibold leading-[40px] tracking-[-0.016em];
+  }
+  .text-heading-medium-bold {
+    @apply text-[16px] font-medium leading-[24px] tracking-[-0.008em];
+  }
+}
+
+@layer utilities {
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
