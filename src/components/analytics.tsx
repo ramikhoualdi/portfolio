@@ -7,7 +7,7 @@ export function Analytics() {
   return (
     <>
       <SpeedInsights />
-      <VercelAnalytics />;
+      <VercelAnalytics />
     </>
   );
 }
