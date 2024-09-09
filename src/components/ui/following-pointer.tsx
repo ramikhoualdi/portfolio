@@ -64,10 +64,12 @@ export const FollowPointer = ({
   x,
   y,
   title,
+  className,
 }: {
   x: any;
   y: any;
   title?: string | React.ReactNode;
+  className?: string;
 }) => {
   const colors = useMemo(() => {
     return [
@@ -89,7 +91,7 @@ export const FollowPointer = ({
 
   return (
     <motion.div
-      className="absolute z-50 h-4 w-4 rounded-full"
+      className={cn("absolute z-50 h-4 w-4 rounded-full", className)}
       style={{
         top: y,
         left: x,
