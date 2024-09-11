@@ -8,11 +8,19 @@ import { UsersCursors } from "@/components/content/users-cursors";
 import { WebApps } from "@/components/content/web-apps";
 import { FollowerPointerCard } from "@/components/ui/following-pointer";
 import { usePortfolio } from "@/context/portfolio-context";
+import { useEffect } from "react";
 
 export default function IndexPage() {
   const { state } = usePortfolio();
   const { currentUserLocation } = state;
-  
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Enables smooth scrolling
+    });
+  }, []);
+
   return (
     <FollowerPointerCard
       title={
