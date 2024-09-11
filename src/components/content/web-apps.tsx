@@ -8,6 +8,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
 import { Button } from "@/components/ui/button";
 import { webApps } from "@/components/constants/mobile-apps";
 import { useWindowSize } from "@/hooks/use-window-size";
+import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 
 interface IPlatform {
   isShown: boolean;
@@ -18,6 +19,11 @@ interface IPlatform {
 interface ITech {
   name: string;
   url: string;
+}
+
+interface INeonColors {
+  firstColor: string;
+  secondColor: string;
 }
 
 interface IMobile {
@@ -31,6 +37,7 @@ interface IMobile {
   ios: IPlatform;
   android: IPlatform;
   web: IPlatform;
+  neonColors: INeonColors;
 }
 
 interface MobileAppDetailsProps {
@@ -93,13 +100,19 @@ export function WebApps() {
         return (
           <Fragment key={appName}>
             <div className="flex items-center gap-4 pl-4">
-              <Image
-                className="object-contain"
-                src={`/images/${appInfo?.imagesFolder}/logo.png`}
-                width={50}
-                height={50}
-                alt={`${appInfo?.name}-logo`}
-              />
+              <NeonGradientCard
+                className="h-[60px] w-[60px] items-center justify-center !p-0 text-center"
+                neonColors={appInfo?.neonColors}
+                borderSize={1}
+              >
+                <Image
+                  className="object-contain"
+                  src={`/images/${appInfo?.imagesFolder}/logo.png`}
+                  width={60}
+                  height={60}
+                  alt={`${appInfo?.name}-logo`}
+                />
+              </NeonGradientCard>
               <h2 className="md:text-heading-large text-xl font-bold underline underline-offset-4">
                 {appInfo?.name}
               </h2>

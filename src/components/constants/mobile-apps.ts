@@ -38,6 +38,7 @@ export const mobileApps = [
       link: null,
     },
     isMobile: true,
+    neonColors: { firstColor: "#75b838", secondColor: "#4cdde4" },
   },
   {
     nb: "04",
@@ -80,6 +81,7 @@ export const mobileApps = [
       link: "https://main.d2zgh6ymprehn7.amplifyapp.com",
     },
     isMobile: true,
+    neonColors: { firstColor: "#01d7bb", secondColor: "#8df6e8" },
   },
   {
     nb: "05",
@@ -109,6 +111,7 @@ export const mobileApps = [
       link: null,
     },
     isMobile: true,
+    neonColors: { firstColor: "#ffffff", secondColor: "#0091ff" },
   },
   {
     nb: "06",
@@ -138,6 +141,7 @@ export const mobileApps = [
       link: null,
     },
     isMobile: true,
+    neonColors: { firstColor: "#ffffff", secondColor: "#ff6d89" },
   },
   {
     nb: "07",
@@ -167,6 +171,7 @@ export const mobileApps = [
       link: null,
     },
     isMobile: true,
+    neonColors: { firstColor: "#f70103", secondColor: "#7273f4" },
   },
   {
     nb: "08",
@@ -197,6 +202,7 @@ export const mobileApps = [
       link: null,
     },
     isMobile: true,
+    neonColors: { firstColor: "#ff7008", secondColor: "#ffffff" },
   },
 ];
 
@@ -247,6 +253,7 @@ export const webApps = [
       link: "https://credium-esg-dev.azurewebsites.net",
     },
     isMobile: false,
+    neonColors: { firstColor: "#325dec", secondColor: "#b0bff0" },
   },
   {
     nb: "02",
@@ -287,5 +294,6 @@ export const webApps = [
       link: "https://impulsive.vercel.app",
     },
     isMobile: false,
+    neonColors: { firstColor: "#7cbc40", secondColor: "#00FFF1" },
   },
 ];
