@@ -1,17 +1,7 @@
-import { BaseColor } from "@/lib/base-colors";
-import { useAtom } from "jotai";
-import { atomWithStorage } from "jotai/utils";
-
-type Config = {
-  theme: BaseColor["name"];
-  radius: number;
-};
-
-const configAtom = atomWithStorage<Config>("config", {
-  theme: "zinc",
-  radius: 0.5,
-});
+import { usePortfolio } from "@/context/portfolio-context";
 
 export function useConfig() {
-  return useAtom(configAtom);
+  const { state } = usePortfolio();
+  const { theme, radius } = state;
+  return [{ theme, radius }];
 }

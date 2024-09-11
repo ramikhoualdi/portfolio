@@ -3,7 +3,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 
 import { motion, AnimatePresence, useMotionValue } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { cn, shuffleArray } from "@/lib/utils";
 
 export const FollowerPointerCard = ({
   children,
@@ -82,11 +82,15 @@ export const FollowPointer = ({
       "yellow-500",
     ];
   }, []);
-  const [cursorColor, setCursorColor] = useState(colors[0]);
+  const shuffledColors = shuffleArray(colors);
+
+  const [cursorColor, setCursorColor] = useState(shuffledColors[0]);
 
   useEffect(() => {
     return () =>
-      setCursorColor(colors[Math.floor(Math.random() * colors.length)]);
+      setCursorColor(
+        shuffledColors[Math.floor(Math.random() * shuffledColors.length)],
+      );
   }, [colors]);
 
   return (

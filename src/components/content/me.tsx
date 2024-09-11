@@ -1,8 +1,10 @@
+import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import { FadeText } from "@/components/magicui/fade-text";
+import { cn } from "@/lib/utils";
 
 export default function Me() {
   return (
-    <div className="flex min-h-dvh w-full flex-col items-start justify-center md:items-center">
+    <div className="relative flex max-h-dvh min-h-dvh w-full flex-col items-start justify-center md:items-center">
       <div className="mb-[20px]">
         <FadeText
           className="font-['Valencia'] text-[9rem] leading-[140px] md:text-[9rem] lg:text-[12rem]"
@@ -23,6 +25,17 @@ export default function Me() {
           text="Software Engineer"
         />
       </div>
+      <AnimatedGridPattern
+        numSquares={30}
+        maxOpacity={0.1}
+        duration={3}
+        repeatDelay={3}
+        className={cn(
+          "[mask-image:radial-gradient(700px_circle_at_center,white,transparent)]",
+          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
+
+        )}
+      />
     </div>
   );
 }
