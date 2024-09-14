@@ -27,6 +27,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/(app)/page.tsx",
+    "src/components/ui/text-cursor.jsx"
   ],
   "exclude": ["node_modules"]
 }
