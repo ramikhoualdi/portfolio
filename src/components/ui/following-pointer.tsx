@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useState } from "react";
 
 import { motion, AnimatePresence, useMotionValue } from "framer-motion";
 import { cn, shuffleArray } from "@/lib/utils";
+import AppleCursor from "@/components/ui/text-cursor";
 
 export const FollowerPointerCard = ({
   children,
@@ -114,40 +115,46 @@ export const FollowPointer = ({
         opacity: 0,
       }}
     >
-      <svg
-        stroke="currentColor"
-        fill="currentColor"
-        strokeWidth="1"
-        viewBox="0 0 16 16"
-        className={`h-6 w-6 -translate-x-[12px] -translate-y-[10px] -rotate-[70deg] transform stroke-${cursorColor.replace(/5/g, "6")} text-${cursorColor}`}
-        height="1em"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"></path>
-      </svg>
-      <motion.div
-        style={{
-          backgroundColor: `var(--${cursorColor})`,
-        }}
-        initial={{
-          scale: 0.5,
-          opacity: 0,
-        }}
-        animate={{
-          scale: 1,
-          opacity: 1,
-        }}
-        exit={{
-          scale: 0.5,
-          opacity: 0,
-        }}
-        className={
-          "min-w-max whitespace-nowrap rounded-full bg-neutral-200 px-2 py-2 text-xs text-white"
-        }
-      >
-        {title || `You`}
-      </motion.div>
+      {typeof x === "number" && typeof y === "number" ? (
+        <>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            strokeWidth="1"
+            viewBox="0 0 16 16"
+            className={`h-6 w-6 -translate-x-[12px] -translate-y-[10px] -rotate-[70deg] transform stroke-${cursorColor.replace(/5/g, "6")} text-${cursorColor}`}
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"></path>
+          </svg>
+          <motion.div
+            style={{
+              backgroundColor: `var(--${cursorColor})`,
+            }}
+            initial={{
+              scale: 0.5,
+              opacity: 0,
+            }}
+            animate={{
+              scale: 1,
+              opacity: 1,
+            }}
+            exit={{
+              scale: 0.5,
+              opacity: 0,
+            }}
+            className={
+              "min-w-max whitespace-nowrap rounded-full bg-neutral-200 px-2 py-2 text-xs text-white"
+            }
+          >
+            {title || `You`}
+          </motion.div>
+        </>
+      ) : (
+        <AppleCursor />
+      )}
     </motion.div>
   );
 };

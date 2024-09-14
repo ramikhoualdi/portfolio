@@ -39,6 +39,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#75b838", secondColor: "#4cdde4" },
+    company: "🏡 Home"
   },
   {
     nb: "04",
@@ -82,6 +83,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#01d7bb", secondColor: "#8df6e8" },
+    company: "Allied Technologies"
   },
   {
     nb: "05",
@@ -112,6 +114,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#ffffff", secondColor: "#0091ff" },
+    company: "🏡 Home"
   },
   {
     nb: "06",
@@ -142,6 +145,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#ffffff", secondColor: "#ff6d89" },
+    company: "Allied Technologies"
   },
   {
     nb: "07",
@@ -172,6 +176,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#f70103", secondColor: "#7273f4" },
+    company: "Allied Technologies"
   },
   {
     nb: "08",
@@ -203,6 +208,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#ff7008", secondColor: "#ffffff" },
+    company: "🏡 Home"
   },
 ];
 
@@ -254,46 +260,48 @@ export const webApps = [
     },
     isMobile: false,
     neonColors: { firstColor: "#325dec", secondColor: "#b0bff0" },
+    company: "credium GmbH"
   },
-  {
-    nb: "02",
-    name: "Impulsive",
-    position: "Software Engineer",
-    tech: [
-      { name: "Next js", url: "https://nextjs.org" },
-      { name: "TypeScript", url: "https://www.typescriptlang.org" },
-      { name: "Redux", url: "https://redux.js.org" },
-      { name: "Tailwind CSS", url: "https://tailwindcss.com" },
-      { name: "REST API", url: "https://restfulapi.net" },
-      { name: "Stripe", url: "https://stripe.com" },
-      { name: "Content Layer", url: "https://www.contentlayer.dev" },
-      { name: "Resend - React Email", url: "https://resend.com" },
-      { name: "Clerk", url: "https://clerk.dev" },
-      { name: "Shadcn/ui", url: "https://ui.shadcn.com" },
-      { name: "Vercel", url: "https://vercel.com" },
-      { name: "Zod", url: "https://zod.dev" },
-      { name: "Sentry", url: "https://sentry.io" },
-      { name: "Vitest", url: "https://vitest.dev" },
-    ],
-    desc: "Developed a mobile application for football fans, featuring live scores, news, match details, quizzes, in-app store, push notification, and game features. Continuously updated to ensure optimal user experience.",
-    platform: "ios & android app • web dashboard",
-    imagesFolder: "sidegame",
-    ios: {
-      isShown: true,
-      text: "ios ",
-      link: null,
-    },
-    android: {
-      isShown: false,
-      text: "",
-      link: "",
-    },
-    web: {
-      isShown: true,
-      text: "web dashboard",
-      link: "https://impulsive.vercel.app",
-    },
-    isMobile: false,
-    neonColors: { firstColor: "#7cbc40", secondColor: "#00FFF1" },
-  },
+  // {
+  //   nb: "02",
+  //   name: "Impulsive",
+  //   position: "Software Engineer",
+  //   tech: [
+  //     { name: "Next js", url: "https://nextjs.org" },
+  //     { name: "TypeScript", url: "https://www.typescriptlang.org" },
+  //     { name: "Redux", url: "https://redux.js.org" },
+  //     { name: "Tailwind CSS", url: "https://tailwindcss.com" },
+  //     { name: "REST API", url: "https://restfulapi.net" },
+  //     { name: "Stripe", url: "https://stripe.com" },
+  //     { name: "Content Layer", url: "https://www.contentlayer.dev" },
+  //     { name: "Resend - React Email", url: "https://resend.com" },
+  //     { name: "Clerk", url: "https://clerk.dev" },
+  //     { name: "Shadcn/ui", url: "https://ui.shadcn.com" },
+  //     { name: "Vercel", url: "https://vercel.com" },
+  //     { name: "Zod", url: "https://zod.dev" },
+  //     { name: "Sentry", url: "https://sentry.io" },
+  //     { name: "Vitest", url: "https://vitest.dev" },
+  //   ],
+  //   desc: "Developed a mobile application for football fans, featuring live scores, news, match details, quizzes, in-app store, push notification, and game features. Continuously updated to ensure optimal user experience.",
+  //   platform: "ios & android app • web dashboard",
+  //   imagesFolder: "sidegame",
+  //   ios: {
+  //     isShown: true,
+  //     text: "ios ",
+  //     link: null,
+  //   },
+  //   android: {
+  //     isShown: false,
+  //     text: "",
+  //     link: "",
+  //   },
+  //   web: {
+  //     isShown: true,
+  //     text: "web dashboard",
+  //     link: "https://impulsive.vercel.app",
+  //   },
+  //   isMobile: false,
+  //   neonColors: { firstColor: "#7cbc40", secondColor: "#00FFF1" },
+  //   company: "🏡 Home"
+  // },
 ];

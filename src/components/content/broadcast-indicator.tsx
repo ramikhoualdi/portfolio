@@ -36,13 +36,15 @@ export const BroadcastIndicator = () => {
 
   useEffect(() => {
     function onConnect() {
+      console.log('connected !')
       dispatch({ type: "UPDATE_BROADCAST_CONNECTION", payload: true });
     }
-
+    
     function onDisconnect() {
+      console.log('disconnected !')
       dispatch({ type: "UPDATE_BROADCAST_CONNECTION", payload: false });
     }
-
+    
     const debouncedCursorUpdate = debounce((data: CursorData) => {
       dispatch({
         type: "UPDATE_USERS_CURSOR",
@@ -56,8 +58,9 @@ export const BroadcastIndicator = () => {
         },
       });
     }, DEBOUNCE_MS);
-
+    
     function onCursorUpdate(data: CursorData) {
+      console.log('cursor updated !')
       debouncedCursorUpdate(data);
     }
 
@@ -94,10 +97,20 @@ export const BroadcastIndicator = () => {
       <TooltipTrigger asChild>
         <Button className="h-auto w-auto cursor-none bg-transparent hover:bg-transparent">
           <div
-            className={`absolute left-3 top-3 h-4 w-4 animate-ping rounded-full bg-red-600 ${isBroadcastConnected ? "bg-green-400" : ""}`}
+            className="absolute left-3 top-3 h-4 w-4 animate-ping rounded-full"
+            style={{
+              backgroundColor: isBroadcastConnected
+                ? "bg-green-400"
+                : "bg-red-600",
+            }}
           />
           <div
-            className={`absolute left-3 top-3 h-4 w-4 rounded-full bg-red-600 ${isBroadcastConnected ? "bg-green-400" : ""}`}
+            className="absolute left-3 top-3 h-4 w-4 rounded-full"
+            style={{
+              backgroundColor: isBroadcastConnected
+                ? "bg-green-400"
+                : "bg-red-600",
+            }}
           />
         </Button>
       </TooltipTrigger>

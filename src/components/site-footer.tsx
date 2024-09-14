@@ -14,7 +14,7 @@ export function SiteFooter() {
           >
             Me
           </a>
-          . The source code is available on{" "}
+          {/* . The source code is available on{" "}
           <a
             href="https://github.com/ramikhoualdi/portfolio"
             target="_blank"
@@ -22,7 +22,7 @@ export function SiteFooter() {
             className="font-medium underline underline-offset-4"
           >
             GitHub
-          </a>
+          </a> */}
           .
         </p>
       </div>

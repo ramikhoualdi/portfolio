@@ -105,6 +105,7 @@
 @layer base {
   * {
     @apply border-border;
+    cursor: none;
   }
   body {
     @apply bg-background text-foreground;
