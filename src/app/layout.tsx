@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: [
     "Portfolio",
-    "Frontend",
+    "Frontend engineer",
     "Software engineer",
-    "Next.js",
+    "Rami Khoualdi",
     "React",
+    "Next js",
     "Typescript",
-    "Tailwind CSS",
   ],
   authors: [
     {

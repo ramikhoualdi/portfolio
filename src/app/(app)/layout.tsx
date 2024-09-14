@@ -8,10 +8,9 @@ interface AppLayoutProps {
 }
 
 export default function AppLayout({ children }: AppLayoutProps) {
-  const containerRef = React.useRef(null);
   return (
     <>
-      <main data-scroll-container ref={containerRef} className="flex-1">
+      <main className="flex-1">
         {children}
       </main>
       <SiteFooter />
