@@ -111,12 +111,14 @@ export function AppsPreview() {
                       alt={`${app.name}-logo`}
                     />
                   </NeonGradientCard>
-                  <h2 className="md:text-heading-large text-xl font-bold underline underline-offset-4">
-                    {app.name}
-                  </h2>
-                  <p className="text-2xl text-muted-foreground">
-                    @ {app.company}
-                  </p>
+                  <div className="flex flex-col">
+                    <h2 className="md:text-[36px] md:font-semibold md:leading-[40px] md:tracking-[-0.024em] text-xl font-bold underline underline-offset-4">
+                      {app.name}
+                    </h2>
+                    <p className="text-xl text-muted-foreground">
+                      @ {app.company}
+                    </p>
+                  </div>
                 </div>
                 <Button
                   onClick={() => toggleApp(app.imagesFolder)}
