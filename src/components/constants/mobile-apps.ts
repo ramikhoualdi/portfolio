@@ -39,7 +39,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#75b838", secondColor: "#4cdde4" },
-    company: "🏡 Home"
+    company: "personal app",
   },
   {
     nb: "04",
@@ -83,7 +83,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#01d7bb", secondColor: "#8df6e8" },
-    company: "Allied Technologies"
+    company: "Allied Technologies",
   },
   {
     nb: "05",
@@ -114,7 +114,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#ffffff", secondColor: "#0091ff" },
-    company: "🏡 Home"
+    company: "personal project",
   },
   {
     nb: "06",
@@ -145,7 +145,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#ffffff", secondColor: "#ff6d89" },
-    company: "Allied Technologies"
+    company: "Allied Technologies",
   },
   {
     nb: "07",
@@ -176,7 +176,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#f70103", secondColor: "#7273f4" },
-    company: "Allied Technologies"
+    company: "Allied Technologies",
   },
   {
     nb: "08",
@@ -208,7 +208,7 @@ export const mobileApps = [
     },
     isMobile: true,
     neonColors: { firstColor: "#ff7008", secondColor: "#ffffff" },
-    company: "🏡 Home"
+    company: "Allied Technologies",
   },
 ];
 
@@ -260,7 +260,7 @@ export const webApps = [
     },
     isMobile: false,
     neonColors: { firstColor: "#325dec", secondColor: "#b0bff0" },
-    company: "credium GmbH"
+    company: "credium GmbH",
   },
   // {
   //   nb: "02",
